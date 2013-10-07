@@ -1,0 +1,7 @@
+._*
+.python-version
+.django-trunk
+.sass-cache
+
+*.pyc
+*.sqlite3
