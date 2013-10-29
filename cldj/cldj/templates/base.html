@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{% block title %}CommunityLink // Default{% endblock title %}</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>  
+  <link rel="stylesheet" href="/css/app.css">
+
+  <script src="/js/vendor/custom.modernizr.js"></script>
+
+</head>
+
+<body>
+
+  {% block topbar %}
+  <div class="row">
+    <nav class="top-bar" style="">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <h1>
+            <a href="/">
+            <img src="/img/logo_reversed.svg" width="120px" height="32px" alt="CommunityLink" />
+            </a>
+          </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="" style="text-transform:uppercase;"><a href="#">Contact Us</a></li>
+          <li class="symbol"><a href="https://www.facebook.com/pages/CommunityLink/115032009134">roundedfacebook</a></li>
+          <li class="symbol"><a href="https://twitter.com/communitylink">roundedtwitterbird</a></li>
+          <li class="symbol"><a href="http://www.linkedin.com/companies/communitylink">roundedlinkedin</a></li>
+          <li class="symbol"><a href="http://www.youtube.com/communitylink">roundedyoutube</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+  {% endblock topbar %}
+
+  {% block content %}  
+  <p>This is content.</p>
+  {% endblock content %}
+
+  {% block footer %}  
+  <footer class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <p>&copy; Copyright 1996&ndash;2013 CommunityLink, a division of Craig Williams Creative, Inc. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  {% endblock footer %}
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '/js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.abide.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
