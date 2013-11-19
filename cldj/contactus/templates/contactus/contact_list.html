@@ -21,7 +21,7 @@
         </li>
         <li>+1 (618) 357-8653</li>
         <li><a href="mailto:hello@communitylink.com">hello@communitylink.com</a></li>
-        <li><strong>Hours:</strong> M&ndash;F 8 a.m. &ndash; 5 p.m. CT</li>
+        <li><strong>Hours:</strong> 8 a.m. &ndash; 5 p.m. CT, M&ndash;F</li>
       </ul>
     </div>
 
@@ -29,7 +29,7 @@
       <table>
         <thead>
           <tr>
-            <th colspan="2">If you don't know your party's extension</th>
+            <th colspan="2">Staff Directory</th>
           </tr>
         </thead>
         <tbody>
@@ -45,10 +45,10 @@
     </div>
     <div class="large-4 columns">
       {% if message_saved %}
-      <h5>Thank you.</h5>
-      <p>Your message has been saved.</p>
+      <h6>Thank you.</h6>
+      <p>Your message has been saved. <small><a href=".">Send another.</a></small></p>
       {% else %}
-      <h5>Leave a message</h5>
+      <h6>Leave a message</h6>
        <p>
        <form method="POST"> {% csrf_token %}
         {{ form|foundation }}
