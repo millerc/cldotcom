@@ -79,7 +79,7 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 
 // Colors
 
-// $primary-color: #2ba6cb;
+$primary-color: #723983;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -295,7 +295,7 @@ $header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Aria
 // We use these to style the labels in different ways
 
 // $form-label-pointer: pointer;
-// $form-label-font-size: em-calc(14);
+$form-label-font-size: em-calc(13);
 // $form-label-font-weight: 500;
 // $form-label-font-color: lighten(#000, 30%);
 // $form-label-bottom-margin: em-calc(3);
@@ -1179,8 +1179,8 @@ $orbit-timer-show-progress-bar: false;
 
 // These control the background color for the table and even rows
 
-// $table-bg: #fff;
-// $table-even-row-bg: #f9f9f9;
+$table-bg: #f3f0eb;
+$table-even-row-bg: #ded9c6;
 
 // These control the table cell border style
 
@@ -1190,8 +1190,8 @@ $orbit-timer-show-progress-bar: false;
 
 // These control the table head styles
 
-// $table-head-bg: #f5f5f5;
-// $table-head-font-size: em-calc(14);
+$table-head-bg: #ded9c6;
+$table-head-font-size: em-calc(13);
 // $table-head-font-color: #222;
 // $table-head-font-weight: bold;
 // $table-head-padding: em-calc(8 10 10);

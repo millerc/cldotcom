@@ -38,10 +38,13 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'debug_toolbar',
-    
-    'cldj',
     'frontpage',
+    'contactus',
+    'cldj',
+
+    'debug_toolbar',
+    'foundationform',
+    
 )
 
 MIDDLEWARE_CLASSES = (

@@ -1,0 +1,25 @@
+<div class="row{{ field.errors|yesno:" error," }}">
+    {% if inline %}
+        <div class="large-2 columns">
+            <label for="{{ field.auto_id }}" class="right inline">
+                {{ field.label }}
+            </label>
+        </div>
+        <div class="large-10 columns">
+            {{ field }}
+            {% for error in field.errors %}
+                <small class="error">{{ error|escape }}</small>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="large-12 columns">
+            <label for="{{ field.auto_id }}" class="">
+                {{ field.label }}
+            </label>
+            {{ field }}
+            {% for error in field.errors %}
+                <small class="error">{{ error|escape }}</small>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>

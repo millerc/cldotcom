@@ -1,0 +1,65 @@
+{% extends "contactus/bare.html" %}
+{% load foundation %}
+{% block title %}CommunityLink // Contact Us{% endblock %}
+{% comment %}Requires ContactListing queryset as variable 'contacts'{% endcomment %}
+{% block content %}
+  <div class="row purple-area">
+    <h1>contact</h1>
+  </div>
+  <div class="row content-default">
+    <div class="large-3 columns">
+      <h5>+1 800 455-5600</h5>
+      <ul class="no-bullet address">
+        <li class="street-address">4742 Holts Prairie Road</li>
+        <li class="pobox">P.O. Box 306</li>
+        <li>
+          <ul class="inline-list">
+            <li class="city">Pinckneyville</li>
+            <li class="state">Illinois</li>
+            <li class="zip">62274</li>
+          </ul>
+        </li>
+        <li>+1 (618) 357-8653</li>
+        <li><a href="mailto:hello@communitylink.com">hello@communitylink.com</a></li>
+        <li><strong>Hours:</strong> M&ndash;F 8 a.m. &ndash; 5 p.m. CT</li>
+      </ul>
+    </div>
+
+    <div class="large-4 columns">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">If you don't know your party's extension</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in contacts %}
+          <tr>
+            <td class="name"><a href="mailto:{{ item.email}}">{{ item.name }}</a>  <br />
+            <small class="title">{{ item.title }}</small></td>
+            <td class="phone"><span class="phone-label">ext.</span> {{ item.extension }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="large-4 columns">
+      {% if message_saved %}
+      <h5>Thank you.</h5>
+      <p>Your message has been saved.</p>
+      {% else %}
+      <h5>Leave a message</h5>
+       <p>
+       <form method="POST"> {% csrf_token %}
+        {{ form|foundation }}
+        <button type="submit" class="right small button">Send</button>
+      </form>
+      {% endif %}
+    </div>
+    <div class="large-1 columns">
+    <p>&nbsp;</p>
+    </div>
+  </div>
+  
+
+{% endblock content %}
