@@ -33,6 +33,9 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
+          {% if user.is_staff %}
+          <li class="" style="text-transform:uppercase;"><a href="/admin/">Admin</a></li>
+          {% endif %}
           <li class="" style="text-transform:uppercase;"><a href="/contact-us/">Contact Us</a></li>
           <li class="symbol"><a href="https://www.facebook.com/pages/CommunityLink/115032009134">roundedfacebook</a></li>
           <li class="symbol"><a href="https://twitter.com/communitylink">roundedtwitterbird</a></li>
