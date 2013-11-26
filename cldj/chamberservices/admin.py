@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from chamberservices.models import ProposalProduct, ProposalRequest
+
+admin.site.register(ProposalRequest)
+admin.site.register(ProposalProduct)
