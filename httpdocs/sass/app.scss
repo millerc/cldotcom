@@ -58,6 +58,7 @@
 
 $light-gray: #e5e5e5;
 $medium-gray: #919191;
+$green: #90d15a;
 										
 body { background-image:url('/img/weaveBg.jpg'); }
 
@@ -67,9 +68,9 @@ body { background-image:url('/img/weaveBg.jpg'); }
 }
 
 .content-default {
-  padding-top: 15px; 
-  padding-bottom: 15px;
+  padding: 15px; 
   background-color: $light-gray;
+  border-bottom: 30px solid #9a9381;
   @include background-image(linear-gradient(#f3f0eb, #ded9c6));
 }
 
@@ -96,11 +97,22 @@ body { background-image:url('/img/weaveBg.jpg'); }
 }
 
 .purple-area h1 { 
-  margin-left: 0.9em;
+  margin-bottom: 0.1em;
   text-shadow: 0px 1px 0px #666;
-  font-size: 2.9em;
   font-weight: 300;
   color: #d4d0c5;
+//  border: 1px solid white;
+}
+
+.purple-area p {
+  color: white;
+  font-size: smaller;
+//  border: 1px solid white;
+}
+
+.accent {
+  font-weight: 600;
+  color: $green;
 }
 
 .orbit-container { 
@@ -117,6 +129,10 @@ body { background-image:url('/img/weaveBg.jpg'); }
   padding-top: 15px; 
   padding-left: 15px; 
   padding-right: 15px; 
+}
+
+.chamber-services-nav {
+  background-color: #4a1f5a;
 }
 
 footer { padding-top: 15px; color: $light-gray; background-color: transparent; text-align: center; font-size: 0.75em;}
@@ -156,3 +172,6 @@ a.symbol:before {
     margin-right: 0.3em;
     font-size: 120%;
 }
+
+#id_products { @include inline-list; }
+#id_delivery_method { @include inline-list; }

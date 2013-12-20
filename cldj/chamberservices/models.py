@@ -34,6 +34,7 @@ class ProposalRequest(models.Model):
         (13, 'Within 3 months'),
         (26, 'Within 6 months'),
         (52, 'Within 12 months'),
+        (0, 'Just looking'),
     )
     
     LAST_PROJECT_CHOICES = (
@@ -52,22 +53,31 @@ class ProposalRequest(models.Model):
     )
     
     organization = models.CharField(max_length=128)
-    contact = models.CharField(max_length=64)
+    contact = models.CharField(max_length=64, verbose_name='Point of contact')
     phone = PhoneNumberField()
     email = models.EmailField()
     website = models.URLField()
-    address = models.CharField(max_length=128)
+    address = models.CharField(max_length=128, verbose_name='Mailing address')
     city = models.CharField(max_length=64)
     state = USStateField()
     zip = models.CharField(max_length=10)
     
-    products = models.ManyToManyField(ProposalProduct)
-    quantity = models.PositiveIntegerField(choices=QUANTITY_CHOICES)
-    delivery_months = models.PositiveIntegerField(choices=DELIVERY_MONTHS_CHOICES)
-    decision_time = models.PositiveIntegerField(choices=DECISION_TIME_CHOICES)
-    last_project = models.PositiveIntegerField(choices=LAST_PROJECT_CHOICES)
-    delivery_method = models.CharField(max_length=16,choices=DELIVERY_METHOD_CHOICES)
+    products = models.ManyToManyField(ProposalProduct, 
+        verbose_name='Choose all of the products you are interested in.')
+    quantity = models.PositiveIntegerField(choices=QUANTITY_CHOICES, 
+        verbose_name='How many do you need?')
+    delivery_months = models.PositiveIntegerField(choices=DELIVERY_MONTHS_CHOICES, 
+        verbose_name='When do you need them?')
+    decision_time = models.PositiveIntegerField(choices=DECISION_TIME_CHOICES, 
+        verbose_name='When do you anticipate making your decision?')
+    last_project = models.PositiveIntegerField(choices=LAST_PROJECT_CHOICES, 
+        verbose_name='When was the last time you did such a project?')
+    delivery_method = models.CharField(max_length=16,choices=DELIVERY_METHOD_CHOICES, 
+        verbose_name='How would you like us to deliver your custom proposal?',
+        default=None,
+        )
     
     created = models.DateTimeField(auto_now=True)
 
-
+    def __unicode__(self):
+        return u'%s %s' % (self.organization, self.created)

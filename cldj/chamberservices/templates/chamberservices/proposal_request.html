@@ -3,11 +3,22 @@
 {% block title %}CommunityLink // Request a quote{% endblock %}
 {% block content %}
   <div class="row purple-area">
-    <h1>request a proposal</h1>
+    <div class="row">
+      <div class="small-6 large-8 small-offset-1 columns">
+        <h1>request a proposal</h1>
+        <p><span class="accent">Interested in our services?</span> Request a proposal.</p>
+      </div>
+      <div class="small-5 large-3 columns">
+        <img src="/img/reloguide.png" />
+      </div>
+    </div>
   </div>
   <div class="row content-default">
-    <div class="large-12 columns">
-      {{ form }}
+    <div class="large-5 large-offset-2 columns">
+       <form class="custom" method="POST"> {% csrf_token %}
+        {{ form|foundation }}
+        <button type="submit" class="big button">Request Custom Proposal</button>
+       </form>
     </div>
   </div>
 {% endblock content %}

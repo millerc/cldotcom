@@ -7,5 +7,6 @@ class ProposalRequestForm(ModelForm):
         model = ProposalRequest
         exclude = ('',)
         widgets = {
-            'products': forms.CheckboxSelectMultiple(),
+            'products': forms.CheckboxSelectMultiple(attrs={'class':'label'}),
+            'delivery_method': forms.RadioSelect(attrs={'class':'label'}),
         }
