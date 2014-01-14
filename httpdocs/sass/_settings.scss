@@ -363,7 +363,7 @@ $paragraph-font-weight: inherit;
 
 // We use this to control the display property.
 
-// $button-display: inline-block;
+$button-display: inline-block;
 $button-margin-bottom: em-calc(0);
 
 // We use these to control button text styles.
@@ -384,8 +384,8 @@ $button-margin-bottom: em-calc(0);
 
 // We use these to control button border styles.
 
-$button-border-width: 0px;
-$button-border-style: none;
+// $button-border-width: 0px;
+// $button-border-style: none;
 
 // We use this to set the default radius used throughout the core.
 

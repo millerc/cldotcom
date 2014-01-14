@@ -131,9 +131,25 @@ body { background-image:url('/img/weaveBg.jpg'); }
   padding-right: 15px; 
 }
 
-.chamber-services-nav {
-  background-color: #4a1f5a;
+#middle-nav {
+  border-top: 0.1em solid lighten($primary-color, 30%);
+  background-color: darken($primary-color, 15%);
 }
+
+.middle-nav-inline-list {
+  @include inline-list;
+  margin-bottom: em-calc(8);
+  li {
+    padding: 0.25em 1em 0 1em;
+    font-size: 0.9em;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.1em;
+    a { color: white; }
+    a:hover { color: lighten($primary-color, 50%); }
+  }
+  li.current a { color: lighten($primary-color, 30%); }
+}
+
 
 footer { padding-top: 15px; color: $light-gray; background-color: transparent; text-align: center; font-size: 0.75em;}
 
