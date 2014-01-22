@@ -1,0 +1,87 @@
+{% extends "chamberservices/bare.html" %}
+{% load foundation %}
+{% block title %}CommunityLink // Cloud{% endblock %}
+{% block content %}
+  <div class="row purple-area">
+    <div class="row">
+      <div class="small-6 large-8 small-offset-1 columns">
+        <h1>cloud</h1>
+        <p><span class="accent">Increased Exposure.</span> Our Publishing Partners are featured prominently in the Cloud, with enhanced online publications.</p>
+      </div>
+      <div class="small-5 large-3 columns">
+        <img src="/img/cloud.png" />
+      </div>
+    </div>
+  </div>
+  
+  {% include "chamberservices/_midnav.html" %}
+
+  <div class="row content-default">
+    <div class="row">
+      <div class="large-9 push-3 columns">
+        <h2>Cloud</h2>
+        <p>Browse the CommunityLink Online &Uuml;ber Directory (CLOUD) for FREE information about communities all across the U.S., including maps, magazines, and travel & relocation guides from our Publishing Partners.</p>
+        
+        <div class="section-container accordion" data-section="accordion">
+          <section>
+            <p class="title" data-section-title><a href="#">Alabama</a></p>
+            <div class="content" data-section-content>
+              <p><a href="/albertville-alabama/">Albertville</a></p>
+            </div>
+            <div class="content" data-section-content>
+              <p><a href="/arab-alabama/">Arab</a></p>
+            </div>
+            <div class="content" data-section-content>
+              <p><a href="/auburn-alabama/">Auburn</a></p>
+            </div>
+            <div class="content" data-section-content>
+              <p><a href="/birmingham-alabama/">Birmingham</a></p>
+            </div>
+          </section>
+          <section>
+            <p class="title" data-section-title><a href="#">Alaska</a></p>
+            <div class="content" data-section-content>
+              <p><a href="/anchorage-alaska/">Anchorage</a></p>
+            </div>
+            <div class="content" data-section-content>
+              <p><a href="/fairbanks-alaska/">Fairbanks</a></p>
+            </div>
+            <div class="content" data-section-content>
+              <p><a href="/juneau-alaska/">Juneau</a></p>
+            </div>
+          </section>
+          <section>
+            <p class="title" data-section-title><a href="#">Arizona</a></p>
+            <div class="content" data-section-content>
+              <p><a href="/avondale-arizona/">Avondale</a></p>
+            </div>
+            <div class="content" data-section-content>
+              <p><a href="/chandler-arizona/">Chandler</a></p>
+            </div>
+            <div class="content" data-section-content>
+              <p><a href="/flagstaff-arizona/">Flagstaff</a></p>
+            </div>
+          </section>
+        </div>
+                
+        <h5 class="subheader">How does this benefit you and your Chamber?</h5>
+        <ul>
+          <li>Chamber exposure</li>
+          <li>Useful resources for relocating families and entrepreneurs</li>
+          <li>Video and photo features</li>
+          <li>Mobile accessible</li>
+          <li>Hundreds of new community links added each week</li>
+          <li>User link submissions</li>
+          <li>Area maps & demographics</li>
+          <li>Geo-targeted twitter and news RSS feeds</li>
+          <li>Enhanced partner online publications</li>
+          <li>Featured links</li>
+        </ul>
+
+      </div>
+      <div class="large-3 pull-9 columns">
+        <p><a href="{% url 'request_proposal' %}"><img src="/img/callout_tops.jpg" /></a></p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

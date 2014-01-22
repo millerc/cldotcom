@@ -12,4 +12,6 @@ urlpatterns = patterns('',
     url(r'^$', 'frontpage.views.home', name='home'),
     url(r'^legal/$', 'frontpage.views.legal', name='legal'),
     url(r'^contact-us/$', 'contactus.views.contact_list', name='contact_list'),
+    url(r'^chamber-services/', include('chamberservices.urls')),
 )
+

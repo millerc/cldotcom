@@ -66,7 +66,7 @@ $default-float: left;
 // $body-bg: #fff;
 // $body-font-color: #222;
 $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
+$body-font-weight: 300;
 // $body-font-style: normal;
 
 // Font-smoothing
@@ -173,9 +173,9 @@ $primary-color: #723983;
 // Control header font styles
 
 $header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
-// $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-weight: 600;
+$header-font-style: normal;
+$header-font-color: #222;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -183,18 +183,18 @@ $header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Aria
 
 // Control header font sizes
 
-// $h1-font-size: em-calc(44);
-// $h2-font-size: em-calc(37);
-// $h3-font-size: em-calc(27);
-// $h4-font-size: em-calc(23);
-// $h5-font-size: em-calc(18);
-// $h6-font-size: 1em;
+$h1-font-size: em-calc(48);
+$h2-font-size: em-calc(32);
+$h3-font-size: em-calc(24);
+$h4-font-size: em-calc(20);
+$h5-font-size: em-calc(18);
+$h6-font-size: 1em;
 
 // Control how subheaders are styled.
 
 // $subheader-line-height: 1.4;
-// $subheader-font-color: lighten($header-font-color, 30%);
-// $subheader-font-weight: 300;
+$subheader-font-color: lighten($header-font-color, 40%);
+$subheader-font-weight: inherit;
 // $subheader-top-margin: .2em;
 // $subheader-bottom-margin: .5em;
 
@@ -206,7 +206,7 @@ $header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Aria
 // Style paragraphs
 
 // $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
+$paragraph-font-weight: inherit;
 // $paragraph-font-size: 1em;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: em-calc(20);
@@ -295,8 +295,8 @@ $header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Aria
 // We use these to style the labels in different ways
 
 // $form-label-pointer: pointer;
-$form-label-font-size: em-calc(13);
-// $form-label-font-weight: 500;
+// $form-label-font-size: em-calc(13);
+// $form-label-font-weight: 700;
 // $form-label-font-color: lighten(#000, 30%);
 // $form-label-bottom-margin: em-calc(3);
 // $input-font-family: inherit;
@@ -363,8 +363,8 @@ $form-label-font-size: em-calc(13);
 
 // We use this to control the display property.
 
-// $button-display: inline-block;
-// $button-margin-bottom: em-calc(20);
+$button-display: inline-block;
+$button-margin-bottom: em-calc(0);
 
 // We use these to control button text styles.
 
@@ -384,8 +384,8 @@ $form-label-font-size: em-calc(13);
 
 // We use these to control button border styles.
 
-// $button-border-width: 1px;
-// $button-border-style: solid;
+// $button-border-width: 0px;
+// $button-border-style: none;
 
 // We use this to set the default radius used throughout the core.
 
@@ -402,7 +402,7 @@ $form-label-font-size: em-calc(13);
 
 // Sets the margin for the right side by default, and the left margin if right-to-left direction is used
 
-// $button-bar-margin-opposite: em-calc(10);
+$button-bar-margin-opposite: em-calc(0);
 
 //
 // Dropdown Button Variables
@@ -1013,6 +1013,7 @@ $orbit-timer-show-progress-bar: false;
 // We use these to control the style of the modal itself.
 
 // $reveal-modal-bg: #fff;
+$reveal-modal-bg: #ded9c6;
 // $reveal-position-top: 50px;
 // $reveal-default-width: 80%;
 // $reveal-modal-padding: em-calc(20);

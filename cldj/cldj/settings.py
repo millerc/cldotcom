@@ -40,8 +40,10 @@ INSTALLED_APPS = (
     
     'frontpage',
     'contactus',
+    'chamberservices',
     'cldj',
 
+    'localflavor',
     'debug_toolbar',
     'foundationform',
     

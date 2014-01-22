@@ -1,0 +1,42 @@
+{% extends "chamberservices/bare.html" %}
+{% load foundation %}
+{% block title %}CommunityLink // Tell your story{% endblock %}
+{% block content %}
+  <div class="row purple-area">
+    <div class="row">
+      <div class="small-6 large-8 small-offset-1 columns">
+        <h1>marketwise</h1>
+        <p><span class="accent">Go crazy &hellip; it&rsquo;s FREE!</span> Introducing the MarketWise Promotional Toolbox from CommunityLink. Available to your Chamber of Commerce at absolutely no charge. Zero. Zip. Nada. Nothing.</p>
+      </div>
+      <div class="small-5 large-3 columns">
+        <img src="/img/marketwisecallout.png" />
+      </div>
+    </div>
+  </div>
+  
+  {% include "chamberservices/_midnav.html" %}
+
+  <div class="row content-default">
+    <div class="row">
+      <div class="large-7 push-5 columns">
+        <h2><a href="/mwdeluxe/home.php">Request a Custom Design Package</a></h2>
+          <p>Choose from a growing library of professionally designed marketing messages, customized for your chamber and your promotional needs. Click on one of the category links to get started!</p>
+          <ul>
+            <li><a href="/mwdeluxe/recruitment.php">Recruitment</a> &mdash; Attract new members.</li>
+            <li><a href="/mwdeluxe/retention.php">Retention</a> &mdash; Stimulate membership renewal.</li>
+            <li><a href="/mwdeluxe/events-networking.php">Events &amp; Networking</a> &mdash; Advertise your event.</li>
+          </ul>
+          <br />
+          <h2>Still Not Sure?</h2>
+          <p>Want to know more about the Marketwise Promotional Toolbox? <a href="/mwdeluxe/home.php">Visit the MarketWise website</a> for more information.</p>
+
+      </div>
+      <div class="large-5 pull-7 columns">
+        <div class="flex-video widescreen">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/nhl4eSFWAiM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p><a href="{% url 'request_proposal' %}"><img src="/img/callout_tops.jpg" /></a></p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
