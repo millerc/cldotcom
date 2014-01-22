@@ -1,0 +1,24 @@
+  <div class="row" id="mid-nav">
+    <div class="small-12 columns">
+      <ul class="mid-nav-ilist">
+        <li{% if page_name == 'chamberville' %} class="current"{% endif %}>
+          <a href="{% url 'chamberservices.views.default' 'chamberville' %}">Chamberville</a>
+        </li>
+        <li{% if page_name == 'tell-your-story' %} class="current"{% endif %}>
+          <a href="{% url 'chamberservices.views.default' 'tell-your-story' %}">Tell Your Story</a>
+        </li>
+        <li{% if page_name == 'maps' %} class="current"{% endif %}>
+          <a href="{% url 'chamberservices.views.default' 'maps' %}">Maps</a>
+        </li>
+        <li{% if page_name == 'cloud' %} class="current"{% endif %}>
+          <a href="{% url 'chamberservices.views.default' 'cloud' %}">Cloud</a>
+        </li>
+        <li{% if page_name == 'chamber-os' %} class="current"{% endif %}>
+          <a href="{% url 'chamberservices.views.default' 'chamber-os' %}">ChamberOS</a>
+        </li>
+        <li{% if page_name == 'marketwise' %} class="current"{% endif %}>
+          <a href="{% url 'chamberservices.views.default' 'marketwise' %}">Marketwise</a>
+        </li>
+      </ul>
+    </div>
+  </div>

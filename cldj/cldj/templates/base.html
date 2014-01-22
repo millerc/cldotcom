@@ -57,7 +57,7 @@
     <div class="large-12 columns">
       <div class="row">
         <p>
-          &copy; Copyright 1996&ndash;2013 CommunityLink, a division of Craig Williams Creative, Inc. All Rights Reserved.
+          &copy; Copyright 1996&ndash;{% now "Y" %} CommunityLink, a division of Craig Williams Creative, Inc. All Rights Reserved.
           | <a href="{% url "legal" %}#terms">Terms of use</a> | <a href="{% url "legal" %}#privacy">Privacy Policy</a>
         </p>
         </ul>
@@ -65,7 +65,7 @@
     </div>
   </footer>
   {% endblock footer %}
-
+  {% block extrabody %}{% endblock extrabody %}
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? '/js/vendor/zepto' : 'js/vendor/jquery') +

@@ -1,0 +1,49 @@
+{% extends "chamberservices/bare.html" %}
+{% load foundation %}
+{% block title %}CommunityLink // Maps{% endblock %}
+{% block content %}
+  <div class="row purple-area">
+    <div class="row">
+      <div class="small-6 large-8 small-offset-1 columns">
+        <h1>cartography</h1>
+        <p><span class="accent">[kahr-tog-ruh-fee]</span> &mdash; the science or practice of drawing maps.</p>
+      </div>
+      <div class="small-5 large-3 columns">
+        <img src="/img/reloguide.png" />
+      </div>
+    </div>
+  </div>
+  
+  {% include "chamberservices/_midnav.html" %}
+
+  <div class="row content-default">
+    <div class="row">
+      <div class="large-7 push-5 columns">
+        <h2>Maps</h2>
+
+          <p>A map is often the first introduction made between your community and its visitors. Think about it; the first thing they'll need to know when they arrive in your town is how to get where they're supposed to go. A map is the perfect vehicle to give them exactly what they need and present a distinguishing snapshot of what makes your hometown special. Don't take chances with that important first impression - make sure you wow them with a CommunityLink map.</p>
+					<p>The professional cartographers and GIS specialists at CommunityLink are known for their attention to detail and commitment to accuracy. They're also devoted to clarity, so you can be confident that your new map will have distinctly labeled streets and eye-catching icons that make it easy to use. The award winning design team will ensure that all of your community's points of interest get noticed with just a glance, and the top-notch sales staff is ready to make your new map as profitable as it is beautiful.</p>
+					<p><a name="alr"></a>Every CommunityLink Map comes with our <a href="#" data-reveal-id="alrModal">Adlink Reserve Sponsorship Reservation System</a> to enhance your revenue opportunities and make sponsorship quick and easy for your members.</p>
+					<p>Accurate, eye-catching, and informative with non-dues revenue attached. Whether it's printed and folded or accessed on the web, CommunityLink maps help your town put its best foot forward one visitor after another.</p>
+
+      </div>
+      <div class="large-5 pull-7 columns">
+        <div class="flex-video widescreen">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/LrRm_udesIo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p><a href="{% url 'request_proposal' %}"><img src="/img/callout_tops.jpg" /></a></p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block extrabody %}
+  <div id="alrModal" class="reveal-modal">
+  	<h2>AdLink Reserve</h2>
+  	<p><img src="/img/adlinkscreen.png" alt="AdLink Reserve Sponsorship Reservation System" class="right" /></p>
+  	<p>CommunityLink has combined a sales cycle and technology to offer you the AdLink Reserve Sponsorship Reservation System. Once your project has been started, you have the opportunity to sell your sponsorship and receive 20% with this exclusive show &amp; sell system.</p>
+  	<p>Here's how it works: You are provided with a members-only online preview of your Street Map &amp; Resource Guide giving you an "early bird" show and sell website for members to reserve their ad.</p>
+  	<p>This creates a unique opportunity to lock down prime placement of ads on the map template BEFORE the regular, CommunityLink sales cycle begins. Ads in this system are reserved in real time, so it's first come, first served. This unique technology is brought to you exclusively by CommunityLink.</p>
+  	<a class="close-reveal-modal">&#215;</a>
+  </div>
+{% endblock extrabody %}

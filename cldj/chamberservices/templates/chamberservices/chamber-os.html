@@ -1,0 +1,31 @@
+{% extends "chamberservices/bare.html" %}
+{% load foundation %}
+{% block title %}CommunityLink // ChamberOS{% endblock %}
+{% block content %}
+  <div class="row purple-area">
+    <div class="row">
+      <div class="small-6 large-8 small-offset-1 columns">
+        <h1>chamberOS</h1>
+        <p><span class="accent">ChamberOS</span> is a turnkey system for converting a Chamber of Commerce into a state-of-the-art local broadcasting and search system for the community.</p>
+      </div>
+      <div class="small-5 large-3 columns">
+        <img src="/img/reloguide.png" />
+      </div>
+    </div>
+  </div>
+  
+  {% include "chamberservices/_midnav.html" %}
+
+  <div class="row content-default">
+    <div class="row">
+      <div class="large-9 push-3 columns">
+<h2>ChamberOS</h2><p>The ChamberOS system, powered by Chamber Nation, is a turnkey system for converting a Chamber of Commerce into a state-of-the-art local broadcasting and search system for the community. We incorporate a fully integrated membership management system with extensions to make it easy to become a very powerful advertising network.</p><p>If you're looking for technology and unlimited training and telephone support to assure your success, this is the right program for you. The success of the program has been well documented and several newspaper articles have noted this as well.</p>
+					<p><a href="http://www.chambernation.com/features.htm">View the Chamber Operating System features</a> for more information.</p>
+					
+      </div>
+      <div class="large-3 pull-9 columns">
+        <p><a href="{% url 'request_proposal' %}"><img src="/img/callout_tops.jpg" /></a></p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

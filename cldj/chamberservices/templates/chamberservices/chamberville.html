@@ -1,0 +1,35 @@
+{% extends "chamberservices/bare.html" %}
+{% load foundation %}
+{% block title %}CommunityLink // Chamberville{% endblock %}
+{% block content %}
+  <div class="row purple-area">
+    <div class="row">
+      <div class="small-6 large-8 small-offset-1 columns">
+        <h1>chamberville</h1>
+        <p><span class="accent">Welcome to CommunityLink Chamberville.</span> A place where chamberin&rsquo; is easy, fun and so productive, you won&rsquo;t believe your eyes. This is where you'll find yourself in &lsquo;chamber utopia&rsquo; &mdash; where there is a solution for all your chamberin&rsquo; needs. Join us, won&rsquo;t you?</p>
+      </div>
+      <div class="small-5 large-3 columns">
+        <img src="/img/reloguide.png" />
+      </div>
+    </div>
+  </div>
+  
+  {% include "chamberservices/_midnav.html" %}
+
+  <div class="row content-default">
+    <div class="row">
+      <div class="large-7 push-5 columns">
+				<h2>CommunityLink Chamberville</h2>
+				<p>As the founder of CommunityLink Chamberville, I'd like to be the first to welcome you to our town. CommunityLink Chamberville is an Executive Director's utopia, where communication flows freely, members see value in their membership, and non-dues revenue keeps your chamber strong. In CommunityLink Chamberville, annual dinners practically plan themselves, community marketing tools provide unlimited business growth, and the sky is always blue. Okay, you got me on the blue sky part, but the rest is absolutely true thanks to CommunityLink Chamberville's claim to fame: Chamber360&deg;.</p>
+				<p>Go ahead &mdash; take a look around the neighborhood. We think you'll find that CommunityLink Chamberville is the perfect place to get your communications and and non-dues revenue with all the fixin's.</p>
+
+      </div>
+      <div class="large-5 pull-7 columns">
+        <div class="flex-video widescreen">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/SuclAhyiTcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p><a href="{% url 'request_proposal' %}"><img src="/img/callout_tops.jpg" /></a></p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
