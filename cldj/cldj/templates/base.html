@@ -37,11 +37,15 @@
           {% if user.is_staff %}
           <li class="" style="text-transform:uppercase;"><a href="/admin/">Admin</a></li>
           {% endif %}
-          <li class="" style="text-transform:uppercase;"><a href="/contact-us/">Contact Us</a></li>
+          <li class="" style="text-transform:uppercase;">
+            <a href="/contact-us/">Contact Us&emsp; &#9742; <small>800 455-5600</small></a>
+          </li>
+          {% comment %}
           <li class="symbol"><a href="https://www.facebook.com/pages/CommunityLink/115032009134">roundedfacebook</a></li>
           <li class="symbol"><a href="https://twitter.com/communitylink">roundedtwitterbird</a></li>
           <li class="symbol"><a href="http://www.linkedin.com/companies/communitylink">roundedlinkedin</a></li>
           <li class="symbol"><a href="http://www.youtube.com/communitylink">roundedyoutube</a></li>
+          {% endcomment %}
         </ul>
       </section>
     </nav>
@@ -53,17 +57,15 @@
   {% endblock content %}
 
   {% block footer %}  
-  <footer class="row">
-    <div class="large-12 columns">
-      <div class="row">
+  <div class="row">
+    <footer>
         <p>
           &copy; Copyright 1996&ndash;{% now "Y" %} CommunityLink, a division of Craig Williams Creative, Inc. All Rights Reserved.
-          | <a href="{% url "legal" %}#terms">Terms of use</a> | <a href="{% url "legal" %}#privacy">Privacy Policy</a>
+          &emsp; 
+          <a href="{% url "legal" %}#terms">Terms of use</a> &middot; <a href="{% url "legal" %}#privacy">Privacy Policy</a>
         </p>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   {% endblock footer %}
   {% block extrabody %}{% endblock extrabody %}
   <script>
