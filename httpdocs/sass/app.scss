@@ -77,6 +77,51 @@ body { background-image:url('/img/tile.svg'); }
   @include background-image(linear-gradient(#f3f0eb, #ded9c6));
 }
 
+.cafe-wrapper {
+  background-color: $light-gray;
+  background-image: url('/img/paper.svg');  
+}
+
+.cafe-banner {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.content-cafe {
+  font-family: 'Josefin Slab', sans-serif; 
+}
+
+.cafe-nav {
+  font-family: 'Asset', serif;
+  color: #d4d0c5;
+}
+
+.guest-check {
+  background-image: url('/img/cafe/guest-check-fs8.png');
+  background-size: cover;
+  overflow: visible;
+  height: 280px;
+}
+  
+h2.cafe { 
+  font-family: 'Montez', serif; 
+  line-height: 1.2em;
+}
+
+h3.cafe { 
+  font-family: 'Josefin Slab', sans-serif; 
+  line-height: 1.2em;
+}
+
+.center {  
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
 .phone, .title, .address {
   font-size: smaller;
 }
@@ -90,6 +135,10 @@ body { background-image:url('/img/tile.svg'); }
   border: 1px solid rgba(255,255,255,0.4375); 
   width: 205px;
 //  @include background-image(radial-gradient(50% 50%, rgba(255,255,255,0.3) 40px, rgba(255,255,255,0) 110px));
+}
+
+.chalkboard { @include panel(rgba(0,0,0,0.625), 0.9em);
+  border: .4em solid rgba(255,255,255,0.8);
 }
 
 .purple-area { 

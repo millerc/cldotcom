@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'frontpage',
     'contactus',
     'chamberservices',
+    'cafe',
     'cldj',
 
     'localflavor',
