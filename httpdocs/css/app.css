@@ -7554,17 +7554,18 @@ footer {
   color: #919191;
   background-color: #000;
   text-align: center;
-  font-size: 0.65em;
+  font-family: 'Open Sans Condensed', serif;
+  font-size: 0.75em;
 }
-/* line 224, ../sass/app.scss */
+/* line 225, ../sass/app.scss */
 footer a {
   color: #814195;
 }
-/* line 225, ../sass/app.scss */
+/* line 226, ../sass/app.scss */
 footer a:hover {
   color: #9148a7;
 }
-/* line 226, ../sass/app.scss */
+/* line 227, ../sass/app.scss */
 footer a:active {
   position: relative;
   top: 0.1em;
@@ -7579,7 +7580,7 @@ footer a:active {
   font-style: normal;
 }
 
-/* line 245, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 .symbol, a.symbol:before {
   font-family: 'Mono Social Icons Font';
   -webkit-text-rendering: optimizeLegibility;
@@ -7594,14 +7595,14 @@ footer a:active {
   font-smoothing: antialiased;
 }
 
-/* line 259, ../sass/app.scss */
+/* line 260, ../sass/app.scss */
 a.symbol:before {
   content: attr(title);
   margin-right: 0.3em;
   font-size: 120%;
 }
 
-/* line 265, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 #id_products {
   margin: 0 auto 1.0625em auto;
   margin-left: -1.375em;
@@ -7622,7 +7623,7 @@ a.symbol:before {
   display: block;
 }
 
-/* line 266, ../sass/app.scss */
+/* line 267, ../sass/app.scss */
 #id_delivery_method {
   margin: 0 auto 1.0625em auto;
   margin-left: -1.375em;

@@ -218,9 +218,10 @@ footer {
   width: 100%;
   height: 100%;
   color: $medium-gray; 
-  background-color: #000; 
+  background-color: #000;   
   text-align: center; 
-  font-size: 0.65em;
+  font-family: 'Open Sans Condensed', serif;
+  font-size: 0.75em;
   a { color: lighten($primary-color, 5%); }
   a:hover { color: lighten($primary-color, 10%); }
   a:active { position: relative; top: 0.1em; } 
