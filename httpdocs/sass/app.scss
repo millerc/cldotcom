@@ -62,7 +62,11 @@ $some-other-gray: #9a9381;
 $green: #90d15a;
 										
 // body { background-image:url('/img/weaveBg.jpg'); }
-body { background-image:url('/img/tile.svg'); }
+body { 
+  background-image:url('/img/tile.svg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .top-bar { 
   background-color: #000;

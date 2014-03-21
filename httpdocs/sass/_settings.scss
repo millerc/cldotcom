@@ -1256,13 +1256,13 @@ $table-head-font-size: em-calc(13);
 
 // Background color for the top bar
 
-$topbar-bg-color: rgba(0,0,0,0);
+// $topbar-bg-color: rgba(0,0,0,0);
 // $topbar-bg-color: black;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 
-$topbar-height: 37px;
+// $topbar-height: 37px;
 // $topbar-margin-bottom: 15px;
 
 // Control Input height for top bar
@@ -1271,13 +1271,12 @@ $topbar-height: 37px;
 
 // Controlling the styles for the title in the top bar
 
-$topbar-title-weight: normal;
+// $topbar-title-weight: normal;
 // $topbar-title-font-size: em-calc(17);
 
 // Style the top bar dropdown elements
 
 // $topbar-dropdown-bg: #222;
-$topbar-dropdown-bg: rgba(0,0,0,0);
 // $topbar-dropdown-link-color: #fff;
 // // $topbar-dropdown-link-bg: lighten($topbar-bg-color, 5%);
 // $topbar-dropdown-toggle-size: 5px;
@@ -1289,7 +1288,7 @@ $topbar-dropdown-bg: rgba(0,0,0,0);
 // $topbar-link-color: #fff;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
-$topbar-link-weight: normal;
+// $topbar-link-weight: normal;
 // $topbar-link-font-size: em-calc(13);
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
 // $topbar-link-bg-hover: darken($topbar-bg-color, 3%);
@@ -1304,7 +1303,7 @@ $topbar-link-weight: normal;
 // Top menu icon styles
 
 // $topbar-menu-link-transform: uppercase;
-$topbar-menu-link-font-size: em-calc(12);
+// $topbar-menu-link-font-size: em-calc(12);
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
 // $topbar-menu-icon-color: #fff;
@@ -1325,4 +1324,4 @@ $topbar-menu-link-font-size: em-calc(12);
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky";
-$topbar-arrows: false; //Set false to remove the triangle icon from the menu item
+// $topbar-arrows: false; //Set false to remove the triangle icon from the menu item
