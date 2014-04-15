@@ -1,0 +1,16 @@
+{% autoescape off %}
+On behalf of the {{ project.client_name|slice:":-3" }}, CommunityLink is pleased to inform you that the new {{ project.official_project_title }} has been printed and delivered.
+
+According to our records, {{ sponsor.customer }} is due {{ sponsor.paid_copies_quantity|default:'0'|add:sponsor.free_products }} copies of the publication. This quantity reflects the number of copies you are to receive based on the size of advertisement purchased, plus any extra copies purchased.
+
+Please visit the {{ project.client_name|slice:":-3" }} office, {{ project.client_address_line_1 }} {{ project.client_address_line_2|default:'' }}{{ project.client_address_line_2|yesno:' ,'}}{{ project.client_city }} {{ project.client_state_province }} {{ project.client_zip_postal_code }}, to receive your copies of the {{ project.official_project_title }}.
+
+Thank you for your sponsorship. We hope you enjoy your new CommunityLink publication.
+
+
+{{ sender.sender_name }}, {{ sender.sender_title }}
+CommunityLink, a publishing service of Craig Williams Creative, Inc.
+
+4742 Holts Prairie Road | P.O. Box 306 | Pinckneyville, IL 62274
++1 (800) 455-5600 | +1 (618) 357-8653
+{% endautoescape %}

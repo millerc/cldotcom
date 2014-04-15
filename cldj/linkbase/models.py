@@ -14,3 +14,6 @@ class AuthTicket(models.Model):
     
     def __unicode__(self):
         return self.ticket
+        
+class QuickbaseTable(models.Model):
+     pass

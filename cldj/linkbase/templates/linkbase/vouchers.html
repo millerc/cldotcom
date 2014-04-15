@@ -1,0 +1,44 @@
+{% extends "linkbase/bare.html" %}
+{% load foundation %}
+{% block content %}
+  <div class="row content-default">
+    <div class="small-12 columns">
+      {% if not project %}
+      <h3>Email Vouchers</h3>
+      <div class="small-6 columns">
+        <form class="custom" method="POST"> {% csrf_token %}
+          {{ form|foundation }}
+          <button type="submit" class="radius button">Send Now</button>
+        </form>
+      </div>
+      {% else %}
+      <h3>Email Voucher Results</h3>
+      <div data-alert class="alert-box secondary">
+        {{ sponsors|length }} messages processed. <a href=".">[ Run another project ]</a>
+        <a href="#" class="close">&times;</a>
+      </div>      
+      <h5><small>{{ project.project_code }}</small> {{ project.official_project_title }}</h5>
+      <p class="panel secondary"><strong><em>Example of messages sent:</em></strong><br />{{ sample_message|safe }}</p>
+      <table>
+        <tr>
+          <th>Sponsor</th>
+          <th>Copies</th>
+          <th>Contact</th>
+          <th>Email</th>
+          <th>Sent?</th>
+        </tr>
+        {% for sponsor in sponsors %}
+        <tr>
+          <td>{{ sponsor.customer }}</td>
+          <td>{{ sponsor.paid_copies_quantity|default:'0'|add:sponsor.free_products }}</td>
+          <td>{{ sponsor.billing_contact }}</td>
+          <td>{{ sponsor.billing_contact_email }}</td>
+          <td><span class="{{ sponsor.sent|yesno:'success,alert' }} label">{{ sponsor.sent|yesno }}</span></td>
+        </tr>
+        {% endfor %}
+      </table>
+      <p><a href="."><button class="tiny secondary radius button">Process Another Project</button></a></p>
+      {% endif %}        
+    </div>
+  </div>
+{% endblock content %}
