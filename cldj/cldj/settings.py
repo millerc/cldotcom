@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'contactus',
     'chamberservices',
     'cafe',
+    'linkbase',
     'cldj',
 
     'localflavor',
@@ -98,3 +99,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "httpdocs", "static")
+
+# Sending email
+# https://docs.djangoproject.com/en/dev/topics/email/
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#EMAIL_HOST = 'smtp.emailarray.com'
+#EMAIL_HOST_PASSWORD = '3needle'
+#EMAIL_HOST_USER = 'service@communitylink.com'
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
