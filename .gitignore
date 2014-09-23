@@ -1,7 +1,11 @@
 ._*
+.pyenv
 .python-version
 .django-trunk
 .sass-cache
+.bash*
+.profile
+.ssh
 
 *.pyc
 *.sqlite3
