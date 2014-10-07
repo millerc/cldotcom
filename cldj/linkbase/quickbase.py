@@ -81,7 +81,7 @@ def get_voucher_data(project_code):
     # Sales Status is not Cancelled; Balance Due = 0; Paid Copies and/or Free Products > 0 
     query = etree.SubElement(qdbapi, "query")
     query.text = ("{'395'.CT." + project_code + "}AND{'528'.XCT.'Cancelled'}"
-                  "AND{'60'.EX.'0'}AND({'176'.XEX.''}OR{'197'.XEX.''})")
+                  "AND{'60'.EX.'0'}AND({'176'.GT.'0'}OR{'197'.GT.'0'})")
     # customer,billing_contact,billing_contact_email,paid_copies_quantity,free_products
     clist = etree.SubElement(qdbapi, "clist").text='41.294.336.197.176'
     includeRids = etree.SubElement(qdbapi, "includeRids").text='1'
