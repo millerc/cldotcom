@@ -2,7 +2,7 @@ import urllib2
 from lxml import etree
 
 quser = 'chris.miller@communitylink.com'
-qpass = 'curd998-opus'
+qpass = 'xxxxxxxxx'
 qdbid = 'bgr8fxea4'
 
 url_base = 'https://communitylink.quickbase.com/db/' 
